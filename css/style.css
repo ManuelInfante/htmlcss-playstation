@@ -7,6 +7,33 @@
 
 /* INIZIO HEADER */
 
+/* COMMON */
+h2{
+    font-size: 2em;
+}
+/* Utilities */
+.mycss_button-style{
+    border: none;
+    border-radius: 100px;
+    padding: 0.4rem 1rem;
+}
+
+.mycss_a-style{
+    text-decoration: none;
+}
+
+.mycss_white-text{
+    color: white;
+}
+
+.mycss_text-blue{
+    color: #2170D1;
+}
+
+.mycss_text-gray{
+    color: gray;
+}
+
 /* SONY BANNER */
 
 header #sony_banner{
@@ -77,16 +104,9 @@ header nav.navbar ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > ul > li>
 }
 
 /* NAV BAR DESTRA */
-header nav.navbar ul.navbar-nav > button{
+header nav.navbar ul.navbar-nav > button.mycss_button-style{
     background-color: gray;
-    border: none;
-    border-radius: 100px;
     margin: 5px 0;
-}
-
-header nav.navbar ul.navbar-nav button > a{
-    text-decoration: none;
-    color: white;
 }
 
 header nav.navbar ul.navbar-nav svg{
@@ -94,6 +114,97 @@ header nav.navbar ul.navbar-nav svg{
 }
 
 /* FINE HEADER */
+
+/* INIZIO MAIN */
+
+/* SEZIONE JUMBOTRON */
+
+main section#jumbo{
+    height: calc(100vh - 85px);
+    background-image: url('../img/jumbo-bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+main section#jumbo img{
+    width: 200px;
+    padding-bottom: 1rem;
+}
+
+main section#jumbo button.mycss_button-style{
+    background-color: #CD3D0F;
+}
+
+/* FINE SEZIONE JUMBOTRON */ 
+
+/* INIZIO SEZIONE JUMBOTRON SLIDER*/ 
+main section#jumbo_slider img{
+    width: 100%;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+main section#jumbo_slider img.active{
+    border: 3px solid #2170D1;
+}
+/* FINE SEZIONE JUMBOTRON SLIDER*/ 
+
+/* Sezione Banner PS5 */
+main section#ps5 span:not(.product_name){
+    text-transform: uppercase;
+}
+
+main section#ps5 button.mycss_button-style{
+    background-color: #2170D1;
+}
+
+main section#ps5 img[alt="Playstation 5 main photo"]{
+    width: 100%;
+}
+
+main section#ps5 img:not([alt="Playstation 5 main photo"]){
+    width: 70%;
+    opacity: 0.5;
+}
+
+main section#ps5 div.active{
+    border-bottom: 2px solid #2170D1;
+}
+
+main section#ps5 div.active img{
+    opacity: 1;
+}
+
+/* FINE Sezione Banner PS5 */
+
+/* INIZIO SEZIONE BANNER GIOCO IT TAKES TWO */
+main section#it_takes_two{
+    background-image: url('../img/it-takes-two-hero-banner-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+main section#it_takes_two img{
+    width: 50%;
+}
+
+main section#it_takes_two button{
+    background-color: #CD3D0F;
+}
+/* FINE SEZIONE BANNER GIOCO IT TAKES TWO */
+
+/* INIZIO SEZIONE GIOCHI NUOVI RILASCIATI */
+main section#new_released{
+    background-color: #202020;
+}
+
+main section#new_released img{
+    width: 100%;
+    border-radius: 20px;
+}
+/* FINE SEZIONE GIOCHI NUOVI RILASCIATI */
+
+/* FINE MAIN */
 
 /* MEDIA QUERY XXL */
 @media all and (min-width: 992px){
