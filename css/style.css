@@ -1,5 +1,120 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* INIZIO HEADER */
+
+/* SONY BANNER */
+
+header #sony_banner{
+    background-color: black;
+    max-height: 25px;
+}
+
+header #sony_banner img{
+    width: 80px;
+}
+
+/* NAVBAR */
+header nav.navbar{
+    max-height: 60px;
+}
+
+header nav.navbar ul.navbar-nav > li.nav-item a.nav-link{
+    color: black;
+}
+
+header nav.navbar ul.navbar-nav > li.nav-item > ul.dropdown-menu{
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,.15);
+    border-bottom: 1px solid rgba(0,0,0,.15);
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+
+header nav.navbar ul.navbar-nav > li.nav-item a > svg{
+    width: 10px;
+    transition: all 0.5s;
+}
+
+header nav.navbar ul.navbar-nav > li.nav-item a > svg > path{
+    fill: #999;
+    transition: all 0.5s;
+}
+
+header nav.navbar ul.navbar-nav > li.nav-item a:hover svg{
+    transform: rotate(180deg);
+}
+
+header nav.navbar ul.navbar-nav > li.nav-item a:hover > svg > path{
+    fill: #2170D1;
+}
+
+header nav.navbar ul.navbar-nav > li.nav-item:hover > ul.dropdown-menu{
+    position: static;
+    display: block;
+}
+
+header nav.navbar ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > ul > li{
+list-style: none;
+}
+
+header nav.navbar ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > ul:not(#nav_products) > li > a:before{
+  content: "\2022";
+  color: #2170D1;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+header nav.navbar ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > ul > li> a.dropdown-item > img{
+    width: 50px;
+}
+
+/* NAV BAR DESTRA */
+header nav.navbar ul.navbar-nav > button{
+    background-color: gray;
+    border: none;
+    border-radius: 100px;
+    margin: 5px 0;
+}
+
+header nav.navbar ul.navbar-nav button > a{
+    text-decoration: none;
+    color: white;
+}
+
+header nav.navbar ul.navbar-nav svg{
+    width: 30px;
+}
+
+/* FINE HEADER */
+
+/* MEDIA QUERY XXL */
+@media all and (min-width: 992px){
+    header nav.navbar ul.navbar-nav > li.nav-item > ul.dropdown-menu{
+        border: 0 solid black;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s linear;
+    }
+
+    header nav.navbar ul.navbar-nav > li.nav-item:hover > ul.dropdown-menu{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header nav.navbar ul.navbar-nav > li.nav-item > ul.dropdown-menu:hover{
+        display: block;
+    }
+}
+/* FINE MEDIA QUERY LG */
