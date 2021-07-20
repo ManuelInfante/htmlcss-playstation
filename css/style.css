@@ -14,6 +14,11 @@ h2{
     border: none;
     border-radius: 100px;
     padding: 0.4rem 1rem;
+    transition: transform 0.5s;
+}
+
+.mycss_button-style:hover{
+    transform: scale(1.1);
 }
 
 .mycss_a-style{
@@ -275,7 +280,35 @@ main section#social h3{
     font-size: 2em;
 }
 /* INIZIO SOCIAL */
+
 /* FINE MAIN */
+
+/* FOOTER */
+footer{
+    background-color: #1254a5;
+    color: white;
+}
+
+footer img[alt~=Logo]{
+    width: 60%;
+}
+
+footer img:not([alt~=Logo]){
+    width: 20px;
+}
+
+footer a:not(p > a){
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 5px 0;
+}
+
+footer p > a{
+    color: white;
+    text-decoration: underline;
+}
+/* FOOTER */
 
 /* MEDIA QUERY XXL */
 @media all and (min-width: 992px){
