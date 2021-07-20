@@ -5,11 +5,9 @@
     box-sizing: border-box;
 }
 
-/* INIZIO HEADER */
-
 /* COMMON */
 h2{
-    font-size: 2em;
+    font-size: 2.5em;
 }
 /* Utilities */
 .mycss_button-style{
@@ -22,6 +20,7 @@ h2{
     text-decoration: none;
 }
 
+/* Text Colors */
 .mycss_white-text{
     color: white;
 }
@@ -34,7 +33,16 @@ h2{
     color: gray;
 }
 
-/* SONY BANNER */
+.mycss_text-black{
+    color: black;
+}
+
+/* FINE COMMON */
+
+
+/* INIZIO HEADER */
+
+/* Sony Banner */
 
 header #sony_banner{
     background-color: black;
@@ -204,6 +212,69 @@ main section#new_released img{
 }
 /* FINE SEZIONE GIOCHI NUOVI RILASCIATI */
 
+/* INIZIO SEZIONE PRODOTTI PLAYSTATION */
+main section#ps_products img{
+    width: 100%;
+}
+
+main section#ps_products button{
+    background-color: #2170D1;
+}
+/* FINE SEZIONE PRODOTTI PLAYSTATION */
+
+/* INIZIO PS PLUS */
+main section#ps_plus{
+    background-color: #BEBDBB;
+}
+
+main section#ps_plus img[alt='PS Plus Logo']{
+    width: 60%;
+}
+
+main section#ps_plus img:not([alt='PS Plus Logo']){
+    width: 100%;
+}
+
+main section#ps_plus button{
+    background-color: #D9DADC;
+}
+
+/* FINE PS PLUS */
+
+/* INIZIO SEZIONE DISCOUNT */
+main section#discount img{
+    width: 100%;
+}
+/* FINE SEZIONE DISCOUNT */
+
+/* INIZIO SEZIONE PS NOW */
+main section#ps_now{
+    background-color: #161C3C;
+}
+
+main section#ps_now img[alt='PS Now Logo']{
+    width: 60%;
+}
+
+main section#ps_now img:not([alt='PS Now Logo']){
+    width: 100%;
+}
+
+main section#ps_now button{
+    background-color: white;
+}
+
+/* FINE SEZIONE PS NOW */
+
+/* INIZIO SOCIAL */
+main section#social img{
+    width: 100%;
+}
+
+main section#social h3{
+    font-size: 2em;
+}
+/* INIZIO SOCIAL */
 /* FINE MAIN */
 
 /* MEDIA QUERY XXL */
