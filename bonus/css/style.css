@@ -1,0 +1,335 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+h2{
+    font-size: 2.5em;
+}
+/* Utilities */
+.mycss_button-style{
+    border: none;
+    border-radius: 100px;
+    padding: 0.4rem 1rem;
+    transition: transform 0.5s;
+}
+
+.mycss_button-style:hover{
+    transform: scale(1.1);
+}
+
+.mycss_a-style{
+    text-decoration: none;
+}
+
+/* Text Colors */
+.mycss_white-text{
+    color: white;
+}
+
+.mycss_text-blue{
+    color: #2170D1;
+}
+
+.mycss_text-gray{
+    color: gray;
+}
+
+.mycss_text-black{
+    color: black;
+}
+
+/* FINE COMMON */
+
+
+/* INIZIO HEADER */
+
+/* Sony Banner */
+
+header #sony_banner{
+    background-color: black;
+    max-height: 25px;
+}
+
+header #sony_banner img{
+    width: 80px;
+}
+
+/* NAVBAR */
+header nav.navbar{
+    max-height: 60px;
+}
+
+header nav.navbar ul.navbar-nav > li.nav-item a.nav-link{
+    color: black;
+}
+
+header nav.navbar ul.navbar-nav > li.nav-item > ul.dropdown-menu{
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,.15);
+    border-bottom: 1px solid rgba(0,0,0,.15);
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+
+header nav.navbar ul.navbar-nav > li.nav-item a > svg{
+    width: 10px;
+    transition: all 0.5s;
+}
+
+header nav.navbar ul.navbar-nav > li.nav-item a > svg > path{
+    fill: #999;
+    transition: all 0.5s;
+}
+
+header nav.navbar ul.navbar-nav > li.nav-item a:hover svg{
+    transform: rotate(180deg);
+}
+
+header nav.navbar ul.navbar-nav > li.nav-item a:hover > svg > path{
+    fill: #2170D1;
+}
+
+header nav.navbar ul.navbar-nav > li.nav-item:hover > ul.dropdown-menu{
+    position: static;
+    display: block;
+}
+
+header nav.navbar ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > ul > li{
+list-style: none;
+}
+
+header nav.navbar ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > ul:not(#nav_products) > li > a:before{
+  content: "\2022";
+  color: #2170D1;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+header nav.navbar ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > ul > li> a.dropdown-item > img{
+    width: 50px;
+}
+
+/* NAV BAR DESTRA */
+header nav.navbar ul.navbar-nav > button.mycss_button-style{
+    background-color: gray;
+    margin: 5px 0;
+}
+
+header nav.navbar ul.navbar-nav svg{
+    width: 30px;
+}
+
+/* FINE HEADER */
+
+/* INIZIO MAIN */
+
+/* SEZIONE JUMBOTRON */
+
+main section#jumbo{
+    height: calc(100vh - 85px);
+    background-image: url('../img/jumbo-bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+main section#jumbo img{
+    width: 200px;
+    padding-bottom: 1rem;
+}
+
+main section#jumbo button.mycss_button-style{
+    background-color: #CD3D0F;
+}
+
+/* FINE SEZIONE JUMBOTRON */ 
+
+/* INIZIO SEZIONE JUMBOTRON SLIDER*/ 
+main section#jumbo_slider img{
+    width: 100%;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+main section#jumbo_slider img.active{
+    border: 3px solid #2170D1;
+}
+/* FINE SEZIONE JUMBOTRON SLIDER*/ 
+
+/* Sezione Banner PS5 */
+main section#ps5 span:not(.product_name){
+    text-transform: uppercase;
+}
+
+main section#ps5 button.mycss_button-style{
+    background-color: #2170D1;
+}
+
+main section#ps5 img[alt="Playstation 5 main photo"]{
+    width: 100%;
+}
+
+main section#ps5 img:not([alt="Playstation 5 main photo"]){
+    width: 70%;
+    opacity: 0.5;
+}
+
+main section#ps5 div.active{
+    border-bottom: 2px solid #2170D1;
+}
+
+main section#ps5 div.active img{
+    opacity: 1;
+}
+
+/* FINE Sezione Banner PS5 */
+
+/* INIZIO SEZIONE BANNER GIOCO IT TAKES TWO */
+main section#it_takes_two{
+    background-image: url('../img/it-takes-two-hero-banner-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+main section#it_takes_two img{
+    width: 50%;
+}
+
+main section#it_takes_two button{
+    background-color: #CD3D0F;
+}
+/* FINE SEZIONE BANNER GIOCO IT TAKES TWO */
+
+/* INIZIO SEZIONE GIOCHI NUOVI RILASCIATI */
+main section#new_released{
+    background-color: #202020;
+}
+
+main section#new_released img{
+    width: 100%;
+    border-radius: 20px;
+}
+/* FINE SEZIONE GIOCHI NUOVI RILASCIATI */
+
+/* INIZIO SEZIONE PRODOTTI PLAYSTATION */
+main section#ps_products img{
+    width: 100%;
+}
+
+main section#ps_products button{
+    background-color: #2170D1;
+}
+/* FINE SEZIONE PRODOTTI PLAYSTATION */
+
+/* INIZIO PS PLUS */
+main section#ps_plus{
+    background-color: #BEBDBB;
+}
+
+main section#ps_plus img[alt='PS Plus Logo']{
+    width: 60%;
+}
+
+main section#ps_plus img:not([alt='PS Plus Logo']){
+    width: 100%;
+}
+
+main section#ps_plus button{
+    background-color: #D9DADC;
+}
+
+/* FINE PS PLUS */
+
+/* INIZIO SEZIONE DISCOUNT */
+main section#discount img{
+    width: 100%;
+}
+/* FINE SEZIONE DISCOUNT */
+
+/* INIZIO SEZIONE PS NOW */
+main section#ps_now{
+    background-color: #161C3C;
+}
+
+main section#ps_now img[alt='PS Now Logo']{
+    width: 60%;
+}
+
+main section#ps_now img:not([alt='PS Now Logo']){
+    width: 100%;
+}
+
+main section#ps_now button{
+    background-color: white;
+}
+
+/* FINE SEZIONE PS NOW */
+
+/* INIZIO SOCIAL */
+main section#social img{
+    width: 100%;
+}
+
+main section#social h3{
+    font-size: 2em;
+}
+/* INIZIO SOCIAL */
+
+/* FINE MAIN */
+
+/* FOOTER */
+footer{
+    background-color: #1254a5;
+    color: white;
+}
+
+footer img[alt~=Logo]{
+    width: 60%;
+}
+
+footer img:not([alt~=Logo]){
+    width: 20px;
+}
+
+footer a:not(p > a){
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 5px 0;
+}
+
+footer p > a{
+    color: white;
+    text-decoration: underline;
+}
+/* FOOTER */
+
+/* MEDIA QUERY XXL */
+@media all and (min-width: 992px){
+    header nav.navbar ul.navbar-nav > li.nav-item > ul.dropdown-menu{
+        border: 0 solid black;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s linear;
+    }
+
+    header nav.navbar ul.navbar-nav > li.nav-item:hover > ul.dropdown-menu{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header nav.navbar ul.navbar-nav > li.nav-item > ul.dropdown-menu:hover{
+        display: block;
+    }
+}
+/* FINE MEDIA QUERY LG */
